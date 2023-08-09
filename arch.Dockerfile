@@ -2,11 +2,11 @@ FROM archlinux
 
 RUN pacman --noconfirm -Suy && pacman --noconfirm -S base-devel ruby
 
-RUN useradd -m -G wheel -s /bin/bash guest && \
+RUN useradd -m -G wheel -s /bin/bash megatron && \
     mkdir -p /etc/sudoers.d/ && \
     echo "%wheel ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/nopasswd
 
-USER guest
+USER megatron
 
 # This is needed only on archlinux, nowhere else
 RUN echo 'export PATH="$PATH:$(gem env path | sed '\''s@[^:]\+@&/bin@g'\'')"' >> "$HOME/.bashrc"
