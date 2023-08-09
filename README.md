@@ -1,1 +1,1 @@
-# Linux Distributions Docker Sandbox
+# Docker sandboxes for various Linux distributions
