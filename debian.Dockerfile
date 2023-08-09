@@ -11,5 +11,3 @@ RUN adduser --disabled-password --gecos "" megatron && \
 USER megatron
 
 RUN sudo gem install rspec
-
-CMD rspec --version
