@@ -1,0 +1,12 @@
+services:
+  ubuntu:
+    build: { dockerfile: ubuntu.Dockerfile }
+
+  arch:
+    build: { dockerfile: arch.Dockerfile }
+
+  debian:
+    build: { dockerfile: debian.Dockerfile }
+
+  fedora:
+    build: { dockerfile: fedora.Dockerfile }
